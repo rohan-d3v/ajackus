@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to Ajackus Python Blog Implementation 👋</h1>
 <p>
-  <a href="https://opensource.org/licenses/MIT" target="_blank">
+  <a href="https://github.com/rohan-uxdev/ajackus/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
 </p>
