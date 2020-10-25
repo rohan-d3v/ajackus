@@ -3,7 +3,7 @@
   <a href="https://opensource.org/licenses/MIT" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  > Django Blog Implementation for python. Extra web views for ease of use
+  Django Blog Implementation for python. Extra web views for ease of use
 </p>
 
 ## Setup
