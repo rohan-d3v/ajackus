@@ -9,8 +9,9 @@ class Post(models.Model):
     """
         Creates Model for a post in the database.
     """
-    title = models.CharField(max_length=100)
-    content = models.TextField()
+    title = models.CharField(max_length=30, default='')
+    summary = models.CharField(max_length=60, default='')
+    body = models.CharField(max_length=300, default='')
     date_posted = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
