@@ -1,5 +1,4 @@
 # Standard Library imports
-from PIL import Image
 
 # Third Party imports
 from django.contrib.auth.models import User

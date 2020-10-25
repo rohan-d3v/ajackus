@@ -12,6 +12,7 @@ class Post(models.Model):
     body = models.CharField(max_length=300, default='')
     date_posted = models.DateTimeField(default=timezone.now)
     document = models.FileField(default='placeholder.pdf', upload_to=user_directory_path)
+    tags = models.CharField(default='', max_length=300, blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
