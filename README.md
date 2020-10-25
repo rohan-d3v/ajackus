@@ -49,4 +49,4 @@ X-CSRFToken -
 ## 📝 License
 
 Copyright © 2020 [Rohan Krishna](https://github.com/rohan-uxdev).<br />
-This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+This project is [MIT](https://github.com/rohan-uxdev/ajackus/blob/master/LICENSE) licensed.
