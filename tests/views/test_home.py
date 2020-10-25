@@ -17,9 +17,9 @@ class HomeViewTest(TestCase):
         self.test_user.first_name = 'John'
         self.test_user.last_name = 'Lennon'
         self.test_user.save()
-        Post.objects.create(user=self.test_user, title='Title 1', body='Lorem ipsum')
-        Post.objects.create(user=self.test_user, title='Title 2', body='Lorem ipsum')
-        Post.objects.create(user=self.test_user, title='Title 3', body='Lorem ipsum')
+        Post.objects.create(user=self.test_user, title='Title 1', summary = 'test', body='Lorem ipsum')
+        Post.objects.create(user=self.test_user, title='Title 2', summary = 'test', body='Lorem ipsum')
+        Post.objects.create(user=self.test_user, title='Title 3', summary = 'test', body='Lorem ipsum')
 
     def test_home_page_all_posts(self):
         url = reverse('blog:home')
@@ -30,19 +30,19 @@ class HomeViewTest(TestCase):
     def test_home_page_anonymous_user_buttons(self):
         url = reverse('blog:home')
         response = self.client.get(url)
-        self.assertContains(response, 'Registration')
+        self.assertContains(response, 'Register')
         self.assertContains(response, 'Login')
         self.assertNotContains(response, 'New Post')
-        self.assertNotContains(response, 'Sign Out')
+        self.assertNotContains(response, 'Log Out')
 
     def test_home_page_logged_user_buttons(self):
         self.client.login(username=USERNAME, password=PASSWORD)
         url = reverse('blog:home')
         response = self.client.get(url)
-        self.assertNotContains(response, 'Registration')
+        self.assertNotContains(response, 'Register')
         self.assertNotContains(response, 'Login')
         self.assertContains(response, 'New Post')
-        self.assertContains(response, 'Sign Out')
+        self.assertContains(response, 'Log Out')
 
     def test_user_posts_page_only_users_posts(self):
         # /blog/john_lennon
