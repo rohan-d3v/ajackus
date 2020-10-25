@@ -32,4 +32,3 @@ urlpatterns = [
     path('post/<int:pk>/delete/',
          PostDeleteView.as_view(), name='post-delete'),  # url to delete post.
 ]
-

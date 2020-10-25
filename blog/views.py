@@ -15,6 +15,7 @@ from django.views.generic import (
 
 # Local application import
 from .models import Post
+from .forms import PostUpdateForm
 
 
 def home(request):
@@ -61,6 +62,7 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     fields = ['title', 'summary', 'body', 'document']
 
     def form_valid(self, form):
+        # self.post.save(self.document.name, self.document, save=False)
         form.instance.author = self.request.user
         return super().form_valid(form)
 
