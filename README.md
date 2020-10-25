@@ -25,8 +25,9 @@ Windows
 ## Install
 
 ```sh
-python manage.py loaddata admin_seed
 pip install -r requirements.txt
+python manage.py migrate
+python manage.py loaddata admin_seed
 ```
 
 ## Usage
@@ -39,12 +40,12 @@ python manage.py runserver
 
 👤 **Rohan Krishna**
 
-* Website:  
-* Github: [@rohan-uxdev](https://github.com/rohan-uxdev)
+Github: [@rohan-uxdev](https://github.com/rohan-uxdev)
 
-## Show your support
+## Running APIs on Postman
 
-Give a ⭐️ if this project helped you!
+In order to run these APIs on Postman, you will have to run any get method, and retrieve the csrf token from the cookies on the response and add them to the header
+X-CSRFToken - 
 
 ## 📝 License
 
