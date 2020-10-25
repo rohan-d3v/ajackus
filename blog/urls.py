@@ -31,6 +31,5 @@ urlpatterns = [
          name='post-update'),  # url to update post.
     path('post/<int:pk>/delete/',
          PostDeleteView.as_view(), name='post-delete'),  # url to delete post.
-    path('about/', views.about, name='about'),  # url for about page.
 ]
 
