@@ -15,15 +15,9 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
-        """
-            A string representation of the post model.
-        """
         return self.title
 
     def get_absolute_url(self):
-        """
-            Creates the absolute url for a particular post.
-        """
         return reverse('blog:post-detail', kwargs={'pk': self.pk})
     
     def save(self, **kwargs):

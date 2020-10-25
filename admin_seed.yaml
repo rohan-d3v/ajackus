@@ -4,7 +4,7 @@
 #   password in plaintext: admin
     password: pbkdf2_sha256$150000$2JNp1zz6y61E$ec1hNp3mLbeUXzr+8gEdLqMjxfhz6YTI4jzw2JHCbus=
     is_superuser: true
-    username: admin
+    username: demoAdmin
     first_name: ''
     last_name: ''
     email: ''

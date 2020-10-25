@@ -7,9 +7,6 @@ from django.contrib.auth.models import User
 from .models import Post
 
 class PostUpdateForm(forms.ModelForm):
-    """
-       Creates form for user to update their Profile.
-    """
     class Meta:
         model = Post
         fields = ['document']
