@@ -51,6 +51,3 @@ X-CSRFToken -
 
 Copyright © 2020 [Rohan Krishna](https://github.com/rohan-uxdev).<br />
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
